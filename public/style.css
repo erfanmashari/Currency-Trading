@@ -621,9 +621,9 @@ video {
   }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1160px) {
   .container {
-    max-width: 1280px;
+    max-width: 1160px;
   }
 }
 
@@ -32290,9 +32290,9 @@ video {
     }
   }
 
-  @media (max-width: 1280px) {
+  @media (max-width: 1160px) {
     .sm\:container {
-      max-width: 1280px;
+      max-width: 1160px;
     }
   }
 
@@ -63509,9 +63509,9 @@ video {
     }
   }
 
-  @media (max-width: 1280px) {
+  @media (max-width: 1160px) {
     .md\:container {
-      max-width: 1280px;
+      max-width: 1160px;
     }
   }
 
@@ -94728,9 +94728,9 @@ video {
     }
   }
 
-  @media (max-width: 1280px) {
+  @media (max-width: 1160px) {
     .lg\:container {
-      max-width: 1280px;
+      max-width: 1160px;
     }
   }
 
@@ -125924,7 +125924,7 @@ video {
   }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1160px) {
   .xl\:container {
     width: 100%;
   }
@@ -125947,9 +125947,9 @@ video {
     }
   }
 
-  @media (max-width: 1280px) {
+  @media (max-width: 1160px) {
     .xl\:container {
-      max-width: 1280px;
+      max-width: 1160px;
     }
   }
 
@@ -157166,9 +157166,9 @@ video {
     }
   }
 
-  @media (max-width: 1280px) {
+  @media (max-width: 1160px) {
     .\32xl\:container {
-      max-width: 1280px;
+      max-width: 1160px;
     }
   }
 

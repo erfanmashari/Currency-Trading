@@ -1,0 +1,30 @@
+#hexagon {
+    width: 150px;
+    height: 80px;
+    background: #3c1a5b;
+    position: relative;
+    top: 80px;
+    color: #fff748;
+  }
+  #hexagon::before {
+    content: "";
+    position: absolute;
+    top: -45px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 45px solid #3c1a5b;
+  }
+  #hexagon::after {
+    content: "";
+    position: absolute;
+    bottom: -45px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-top: 45px solid #3c1a5b;
+  }

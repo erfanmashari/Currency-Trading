@@ -1,4 +1,5 @@
 import SideButton from './SideButton'
+import { Link } from "react-router-dom"
 import { AiFillCodeSandboxSquare } from "react-icons/ai"
 import { FaReact } from "react-icons/fa"
 
@@ -10,24 +11,46 @@ const Sidebar = () => {
                     <AiFillCodeSandboxSquare className="text-5xl text-blue-600" />
                     <h1 className="text-xl font-bold">Square</h1>
                 </div>
-                <SideButton iconName="home" title="Dashboard" />
-                <SideButton iconName="trade" title="Trading" />
-                <SideButton iconName="wallet" title="Wallet" />
-                <SideButton iconName="exchange" title="Exchange" />
-                <SideButton iconName="buy" title="Buy & Sell" />
-                <SideButton iconName="profile" title="Profile" />
-                <SideButton iconName="setting" title="Setting" />
+                <Link to="/dashboard">
+                    <SideButton iconName="home" title="Dashboard" />
+                </Link>
+                <Link to="/statistics">
+                    <SideButton iconName="statistics" title="Statistics" />
+                </Link>
+                <Link to="/wallet">
+                    <SideButton iconName="wallet" title="Wallet" />
+                </Link>
+                {/* <Link to="/buysell">
+                    <SideButton iconName="buy" title="Buy & Sell" />
+                </Link> */}
+                <Link to="/profile">
+                    <SideButton iconName="profile" title="Profile" />
+                </Link>
+                <Link to="/logout">
+                    <SideButton iconName="logout" title="Log Out" />
+                </Link>
                 <FaReact className="text-blue-200 text-9xl mx-auto mt-16" />
             </div>
-            <div className="w-1/12 hidden sm:w-0 md:w-2/12 lg:block items-center rounded-l-xl bg-white p-4 md:p-1">
+            <div className="w-1/12 hidden sm:w-0 sm:hidden md:w-2/12 lg:block items-center rounded-l-xl bg-white p-4 md:p-1">
                 <AiFillCodeSandboxSquare className="block text-5xl text-blue-600 mx-auto mb-12" />
-                <SideButton iconName="home" />
-                <SideButton iconName="trade" />
-                <SideButton iconName="wallet" />
-                <SideButton iconName="exchange" />
-                <SideButton iconName="buy" />
-                <SideButton iconName="profile" />
-                <SideButton iconName="setting" />
+                <Link to="/dashboard">
+                    <SideButton iconName="home" />
+                </Link>
+                <Link to="/statistics">
+                    <SideButton iconName="statistics" />
+                </Link>
+                <Link to="/wallet">
+                    <SideButton iconName="wallet" />
+                </Link>
+                <Link to="/buysell">
+                    <SideButton iconName="buy" />
+                </Link>
+                <Link to="/profile">
+                    <SideButton iconName="profile" />
+                </Link>
+                <Link to="/logout">
+                    <SideButton iconName="logout" />
+                </Link>
             </div>
         </>
     )
